@@ -11,23 +11,33 @@
 
     <!-- PAGE 1:  NAME INPUT-->
 
-    <div id = "input-page" class = "active-page">
-      <h1>Fortune Teller or Prediction Card Generator</h1>
+    <div id = "input-page" class = "page">
+      <h1>Fortune Teller</h1>
+      <p>Sitare sirf raasta dikhate hain, chalna toh aapko khud hi padega.</p>
+      <div class="crystal-ball">🔮</div>
       <p>Apna naam dalein aur jaanein ki aaj aapki life ka meter kya keh raha hai!👇</p>
       <input type = "text" id = "username" placeholder = "Enter your name here..." required> 
       <br>
       <button onclick = "fortuneTeller()">
-        <span class="emoji">🔮</span>
         <span class="text">Click Here</span>
       </button>
     </div>
     
     <!--PAGE 2: FORTUNE RESULT -->
 
-    <div id = "fortune-result" class = "page-hidden">
-      <h2></h2>
-      <p>Reading your stars...</p>
+    <div id = "fortune-result" class = "page ">
+      <h2>Apka Fortune Result</h2>
+      <p></p>
+      <p id = "fortune-message">Reading your stars...</p>
+    </div>
+    
+    <!--PAGE 3: FORTUNE METER -->
+
+    <div id = "fortune-meter">
+    <h3>Kya aap aaaj ka apna fortune meter dhekna chahate hai.....? </h3>
+    <span class = "click-here">👉</span> <button onclick = "fortuneMeter()">Click here</button>
     </div>
 
   </div>
-</body>
+  <script src="script.js"></script>
+ </body>
