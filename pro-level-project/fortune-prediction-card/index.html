@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller and Prediction Card Generator</title>
+    <link rel="stylesheet" href = "styles.css">
+</head>
+<body>
+  <div class = "container">
+
+    <!-- PAGE 1:  NAME INPUT-->
+
+    <div id = "input-page" class = "active-page">
+      <h1>Fortune Teller or Prediction Card Generator</h1>
+      <p>Apna naam dalein aur jaanein ki aaj aapki life ka meter kya keh raha hai!👇</p>
+      <input type = "text" id = "username" placeholder = "Enter your name here..." required> 
+      <br>
+      <button onclick = "fortuneTeller()">
+        <span class="emoji">🔮</span>
+        <span class="text">Click Here</span>
+      </button>
+    </div>
+    
+    <!--PAGE 2: FORTUNE RESULT -->
+
+    <div id = "fortune-result" class = "page-hidden">
+      <h2></h2>
+      <p>Reading your stars...</p>
+    </div>
+
+  </div>
+</body>
